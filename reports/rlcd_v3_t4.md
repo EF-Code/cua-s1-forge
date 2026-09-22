@@ -19,6 +19,11 @@ RLCD-v3 replaces the sampled categorical policy-gradient term used in the v1 smo
 
 The checkpoint was trained for four epochs from the baseline checkpoint with seed `20260924`, learning rate `1e-4`, batch size `128`, and expected-reward coefficient `0.10`.
 
+## Published artifacts
+
+- GitHub source: commit `0a155ef8b83d8418058f8d81ecb740f8e2ff5d39`
+- Hugging Face model: `NewSonnet/cua-s1-forge-rlcd-v3`
+
 ## Interpretation and limits
 
 This is a validated correction of the v1 regression, not a 100x claim. The run uses one small synthetic smoke split and one seed. The click class remains unsolved, and ECE is slightly worse than baseline. A larger improvement requires more diverse data, hard negatives for click/submit behavior, multiple seeds, and a held-out evaluation suite.
